@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Mudi - Novo pedido</title>
+</head>
+<body>
+    <div class="container">
+        <div class="p-5 bg-light rounded-1 mb-0">
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold">Novo pedido</h1>
+            </div>
+          </div>
+          <div>
+            <form action="/pedido/novo" method="POST">
+                <label>Produto</label>
+                <input type="text" name="nomeProduto" placeholder="Nome do produto">
+                <small>Informe qual o nome do produto</small>
+    
+                <label>Url</label>
+                <input type="text" name="urlProduto" placeholder="Url do produto">
+                <small>Procure em um site o produto que você deseja e cole a url da página aqui.</small>
+    
+                <label>Imagem</label>
+                <input type="text" name="urlImagem" placeholder="Url da Imagem">
+                <small>Copie a url de uma boa imagem do produto e cole aqui para ajudar a conseguir compradores.</small>
+    
+                <label>Descrição</label>
+                <textarea name="descricao" placeholder="Adicione detalhes importantes para ajudar o comprador."></textarea>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+          </div>
+    </div>
+</body>
+</html>
